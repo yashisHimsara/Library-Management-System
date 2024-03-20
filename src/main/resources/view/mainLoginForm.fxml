@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="694.0" prefWidth="1053.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.MainLoginFormController">
+    <children>
+        <AnchorPane fx:id="SubAnchorPane" layoutX="25.0" layoutY="24.0" prefHeight="644.0" prefWidth="457.0" style="-fx-background-color: #1D3557;" />
+    </children>
+
+</AnchorPane>

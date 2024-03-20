@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="559.0" prefWidth="581.0" style="-fx-background-color: #1D3557;" stylesheets="@../assest/style/sign_in_form.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.AdminSignInFromController">
+   <children>
+      <TextField id="textUserName" fx:id="textUserName" layoutX="63.0" layoutY="217.0" prefHeight="35.0" prefWidth="370.0" promptText="User name" />
+      <PasswordField fx:id="textPassword" layoutX="63.0" layoutY="280.0" prefHeight="35.0" prefWidth="370.0" promptText="Password" />
+      <Label layoutX="125.0" layoutY="147.0" text="Sign In" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <Button layoutX="204.0" layoutY="363.0" mnemonicParsing="false" onAction="#signInBtnOnAction" prefHeight="35.0" prefWidth="120.0" style="-fx-background-color: #1e90ff;" text="Sign In" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="157.0" layoutY="39.0" text="WELCOME BACK" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnBack" layoutX="24.0" layoutY="457.0" mnemonicParsing="false" onAction="#backBtnOnAction" onMouseEntered="#backBtnMouseEnterOnAction" onMouseExited="#backBtnMouseExitOnAction" prefHeight="35.0" prefWidth="120.0" style="-fx-background-color: #1e90ff; -fx-border-color: white;" text="Back" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ToggleButton fx:id="btnToggle" layoutX="467.0" layoutY="285.0" mnemonicParsing="false" onAction="#btnToggleOnAction" prefHeight="26.0" prefWidth="42.0" style="-fx-background-color: C7C8CC;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ToggleButton>
+      <Pane layoutX="463.0" layoutY="221.0" prefHeight="27.0" prefWidth="42.0" style="-fx-background-color: C7C8CC; -fx-background-radius: 3;" />
+      <Label fx:id="lableUserNameWarning" layoutX="581.0" layoutY="280.0" textFill="RED">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="lablePasswordWarning" layoutX="581.0" layoutY="380.0" textFill="RED">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="26.0" fitWidth="42.0" layoutX="471.0" layoutY="221.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/image/user-small.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="560.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.AdminBranchFromController">
+   <children>
+      <TableView fx:id="tblView" layoutX="25.0" layoutY="239.0" prefHeight="301.0" prefWidth="694.0">
+        <columns>
+          <TableColumn fx:id="columnId" prefWidth="203.0" text="ID" />
+          <TableColumn fx:id="columnAddress" prefWidth="273.0" text="address" />
+            <TableColumn fx:id="columnOpenDate" prefWidth="217.0" text="Opened Date" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnDelete" layoutX="341.0" layoutY="174.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="30.0" prefWidth="159.0" style="-fx-background-color: f0e68c;" text="Delete">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnSave" layoutX="114.0" layoutY="174.0" mnemonicParsing="false" onAction="#btnSaveOnAction" prefHeight="30.0" prefWidth="159.0" style="-fx-background-color: #04AA6D;" text="Save">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <TextField fx:id="textAddress" layoutX="251.0" layoutY="94.0" prefHeight="26.0" prefWidth="179.0" promptText="Address" />
+      <DatePicker fx:id="OpenedDayPiker" layoutX="480.0" layoutY="94.0" prefHeight="26.0" prefWidth="225.0" promptText="OpenedDayPicker" />
+      <Button fx:id="btnAddNew" layoutX="64.0" layoutY="28.0" mnemonicParsing="false" onAction="#btnAddNewOnAction" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: lightblue;" text="+  Add New branch">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnPluse" layoutX="52.0" layoutY="189.0" mnemonicParsing="false" onAction="#btnPlusOnAction" prefHeight="30.0" prefWidth="25.0" style="-fx-background-color: lightblue;" text="+" />
+      <TextField fx:id="textID" layoutX="50.0" layoutY="94.0" prefHeight="26.0" prefWidth="179.0" promptText="Id" />
+   </children>
+</AnchorPane>

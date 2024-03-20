@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="644.0" prefWidth="457.0" style="-fx-background-color: #1D3557;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.LoginFormController">
+    <children>
+        <Label layoutX="156.0" layoutY="62.0" text="Book worm" textFill="WHITE">
+            <font>
+                <Font name="System Bold Italic" size="53.0" />
+            </font>
+        </Label>
+
+        <Label layoutX="94.0" layoutY="243.0" onMouseClicked="#UserClickOnAction" prefHeight="43.0" prefWidth="73.0" text="User" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="29.0" />
+            </font>
+        </Label>
+        <Label layoutX="302.0" layoutY="242.0" onMouseClicked="#AdminClickOnAction" prefHeight="43.0" prefWidth="92.0" text="Admin" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="29.0" />
+            </font>
+        </Label>
+        <AnchorPane fx:id="SubAnchorPane" layoutX="20.0" layoutY="304.0" prefHeight="321.0" prefWidth="415.0" />
+      <ImageView fitHeight="106.0" fitWidth="116.0" layoutX="19.0" layoutY="43.0">
+         <image>
+            <Image url="@../assest/image/logo.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

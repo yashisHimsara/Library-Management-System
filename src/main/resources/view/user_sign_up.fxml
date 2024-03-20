@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="700.0" prefWidth="476.0" style="-fx-background-color: #1D3557;" styleClass="mainFxmlClass" stylesheets="@../assest/style/sign_up_form.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.UserSignUpFromController">
+   <children>
+      <TextField fx:id="textName" layoutX="60.0" layoutY="250.0" prefHeight="35.0" prefWidth="360.0" promptText="User Name" />
+      <PasswordField fx:id="textPassword" layoutX="60.0" layoutY="441.0" prefHeight="35.0" prefWidth="360.0" promptText="Password" />
+      <Label layoutX="60.0" layoutY="150.0" text="Sign Up" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <Button layoutX="300.0" layoutY="540.0" mnemonicParsing="false" onAction="#btnSignUpOnAction" prefHeight="35.0" prefWidth="120.0" style="-fx-background-color: #1e90ff;" text="Sign Up" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="51.0" layoutY="41.0" text="WELCOME " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnSignIn" layoutX="98.0" layoutY="540.0" mnemonicParsing="false" onAction="#btnSignInOnAction" onMouseEntered="#mouseEnterOnAction" onMouseExited="#mouseExitOnAction" prefHeight="35.0" prefWidth="120.0" style="-fx-background-color: #1e90ff; -fx-border-color: white;" text="Sign In" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TextField fx:id="textEmail" layoutX="60.0" layoutY="341.0" prefHeight="35.0" prefWidth="360.0" promptText="Email" />
+      <Label fx:id="lblUserNameWarning" layoutX="60.0" layoutY="285.0" textFill="RED" />
+   </children>
+</AnchorPane>

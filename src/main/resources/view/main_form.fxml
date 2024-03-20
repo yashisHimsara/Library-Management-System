@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #1D3557;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.MainFromController">
+   <children>
+      <Separator layoutX="50.0" layoutY="190.0" prefHeight="5.0" prefWidth="600.0" />
+      <Label alignment="CENTER" layoutX="62.0" layoutY="464.0" prefHeight="16.0" prefWidth="577.0" text="Copyright 2024 GDSE - All Rights Reserved. MIT License." textFill="#6b6767">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="192.0" layoutY="20.0" text="Welcome Book Worm" textFill="#1c68eb">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="250.0" layoutY="92.0" text="To Online Library...." textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblAbout" alignment="CENTER" layoutX="60.0" layoutY="134.0" prefHeight="18.0" prefWidth="660.0" text="Please select your choice from the following to continue the process." textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="lblAdmin" layoutX="196.0" layoutY="382.0" textFill="#1b1b1b">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label fx:id="lblUser" layoutX="461.0" layoutY="382.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imgAdmin" layoutX="167.0" layoutY="269.0" onMouseClicked="#imgAdminOnAction" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExiteAnimation">
+         <image>
+            <Image url="@../assest/image/icons8-admin-100%20(2).png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgUser" layoutX="425.0" layoutY="276.0" onMouseClicked="#imgUserOnAction" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExiteAnimation">
+         <image>
+            <Image url="@../assest/image/icons8-user-96%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="152.0" fitWidth="163.0" layoutX="6.0" layoutY="13.0">
+         <image>
+            <Image url="@../assest/image/logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

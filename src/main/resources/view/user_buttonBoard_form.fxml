@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootMain" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #1D3557;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.UserButtonBoardFromController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="200.0" layoutY="501.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+      <AnchorPane fx:id="root" layoutX="20.0" layoutY="120.0" prefHeight="560.0" prefWidth="960.0" style="-fx-background-color: white;" />
+      <AnchorPane layoutX="20.0" layoutY="20.0" prefHeight="100.0" prefWidth="960.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="100.0" stroke="WHITE" strokeType="INSIDE" width="960.0">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.0117647061124444" green="0.0117647061124444" blue="0.0117647061124444" />
+                           </color></Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color></Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Rectangle>
+            <JFXButton fx:id="btnBook" layoutX="114.0" layoutY="30.0" onAction="#btnBookOnAction" prefHeight="60.0" prefWidth="300.0" style="-fx-background-color: #1D3557;" text="Books      " textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" translateX="-30.0">
+                     <image>
+                        <Image url="@../assest/image/icons8-books-48.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="btnBookHis" layoutX="445.0" layoutY="30.0" onAction="#btnBookHisOnAction" prefHeight="60.0" prefWidth="300.0" style="-fx-background-color: #1D3557;" text="Book History" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" translateX="-30.0">
+                     <image>
+                        <Image url="@../assest/image/icons8-book-history-50.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Pane layoutX="10.0" layoutY="10.0" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: black; -fx-background-radius: 10;">
+               <children>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#imgHomeNavi" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assest/image/icons8-home-64.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="880.0" layoutY="30.0" prefHeight="60.0" prefWidth="60.0" style="-fx-background-radius: 100; -fx-background-color: #1e90ff;">
+               <children>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="4.0" layoutY="4.0" onMouseClicked="#imgEditProfilOnAction" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assest/image/editProfileLogo.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
