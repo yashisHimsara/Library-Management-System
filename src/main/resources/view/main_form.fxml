@@ -53,5 +53,10 @@
             <Image url="@../assest/image/logo.png" />
          </image>
       </ImageView>
+      <ImageView layoutX="461.0" layoutY="271.0">
+         <image>
+            <Image url="@../assest/image/icons8-user-96%20(2).png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
